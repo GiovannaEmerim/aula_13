@@ -1,0 +1,207 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: black;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    justify-content: space-between; 
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    padding-top: 32px;
+}
+
+nav li {
+    margin: 0 20px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+}
+
+nav a:hover {
+    background-color: #fff;
+    color: #333;
+}
+
+main {
+    
+    padding: 20px;
+    max-width: 1000px;
+    color: white;
+}
+
+section {
+    margin: 20px 0;
+    width: 100%;
+    
+}
+
+
+section h2 {
+    text-align: center;
+}
+.foto img{
+    width: 300px;
+    border-radius: 10px;
+}
+.about{
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+}
+.text{
+    padding: 20px;
+    text-align: justify;
+}
+
+.projetos{
+    display: flex;
+    flex-direction: row;
+
+}
+.projeto {
+    
+    margin: 20px 2%;
+}
+
+.projeto img {
+    max-width: 100%;
+    height: auto;
+    width: 280px;
+    height: 154px;
+    min-width: 290px;
+    
+    transition: all 0.3s ease-in-out;
+}
+
+.projeto img:hover {
+        
+    transform: scale(1.2);
+    
+}
+
+
+.projeto h3 {
+    margin: 10px 0;
+}
+
+.projeto p {
+    text-align: justify;
+    
+}
+
+form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+form label {
+    margin: 10px 0;
+}
+
+form input,
+form textarea {
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #fff;
+    color: #333;
+}
+
+
+footer {
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    padding: 10px;
+    justify-content: center;
+}
+
+@media only screen and (max-width: 450px), (max-width: 800px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .about{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .projetos{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+
+@media screen and (max-width: 450px) {
+    body{
+        font-size: 0.8rem;
+    }
+    footer {
+        flex-direction: column;
+        align-items: center;
+        
+    }
+    main{
+        padding: 24px 24px;
+    }
+
+} 
+@media screen and (min-width: 800px) {
+    body{
+        font-size: 0.8rem;
+        
+    }
+    main{
+        width: 50%;
+        margin: auto;
+    }
+
+} 
+
+
+
+
+
+
+
+
+
+
